@@ -1,4 +1,4 @@
-import 'package:activout_firebase_options_selector/firebase_options_selector.dart';
+import 'package:activout_firebase_options_selector/src/firebase_options_selector.dart';
 import 'package:flutter/material.dart';
 
 /// Widget that shows a banner with the environment name,
