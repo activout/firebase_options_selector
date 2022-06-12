@@ -1,5 +1,5 @@
 name: activout_firebase_options_selector
-description: FirebaseOptions selection for easier development
+description: When you have multiple Firebase projects for production, test and development, use this library to make it easier to switch between environments without building separate apps!
 version: 0.0.1
 homepage: https://github.com/activout/firebase_options_selector
 
