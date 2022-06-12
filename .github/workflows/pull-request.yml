@@ -11,8 +11,8 @@ jobs:
           java-version: '12.x'
       - uses: subosito/flutter-action@v2
       - run: flutter pub get
-      - run: flutter format --set-exit-if-changed .
-      - run: flutter analyze .
+      - run: flutter format --set-exit-if-changed lib
+      - run: flutter analyze lib
 
   build_example:
     # Do not run in forks
