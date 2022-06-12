@@ -1,6 +1,7 @@
 import 'package:activout_firebase_options_selector/firebase_options_selector.dart';
 import 'package:flutter/material.dart';
 
+/// Show dialog that allows selecting environment for the next time the app starts
 Future<void> showFirebaseOptionsSelectorDialog(
     BuildContext context, String titleText,
     {String okText = 'OK'}) async {
