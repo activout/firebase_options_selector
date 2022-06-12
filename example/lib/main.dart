@@ -1,4 +1,4 @@
-import 'package:activout_firebase_options_selector/firebase_options_selector.dart';
+import 'package:activout_firebase_options_selector/activout_firebase_options_selector.dart';
 import 'package:example/dummy_firebase_options.dart' as production;
 import 'package:example/dummy_firebase_options.dart' as test;
 import 'package:example/dummy_firebase_options.dart' as development;

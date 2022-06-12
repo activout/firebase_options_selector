@@ -1,18 +1,8 @@
-/// When you have multiple Firebase projects for production, test and
-/// development, use this library to make it easier to switch between
-/// environments without building separate apps!
-library activout_firebase_options_selector;
-
 import 'package:activout_firebase_options_selector/src/firebase_options_banner.dart';
 import 'package:firebase_core/firebase_core.dart'
     show Firebase, FirebaseOptions, defaultFirebaseAppName;
 import 'package:flutter/widgets.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-
-export 'package:activout_firebase_options_selector/src/firebase_options_banner.dart'
-    show FirebaseOptionsBanner;
-export 'package:activout_firebase_options_selector/src/firebase_options_selector_dialog.dart'
-    show showFirebaseOptionsSelectorDialog;
 
 /// Main class for persisting a Firebase environment in [SharedPreferences]
 class FirebaseOptionsSelector {
