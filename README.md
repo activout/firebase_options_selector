@@ -11,7 +11,7 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages). 
 -->
 
-Usr this library from [Activout AB](https://activout.se) to switch between different Firebase projects in your app.
+Use this library from [Activout AB](https://activout.se) to switch between different Firebase projects in your app.
 
 ## Features
 
@@ -23,11 +23,7 @@ switch between environments without building separate apps!
 1. Create separate Firebase projects for production, test and development (or what you prefer).
 2. Generate firebase_options files for each Firebase project with
    the [FlutterFire CLI](https://firebase.google.com/docs/flutter/setup).
-3. Add this library to your project with
-
-```sh
-flutter pub add activout_firebase_options_selector
-```
+3. Initialize this library in your main.dart according to the instructions below. It will call `Firebase.initializeApp()` for you!
 
 ## Usage
 
