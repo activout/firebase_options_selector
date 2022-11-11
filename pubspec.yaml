@@ -1,6 +1,6 @@
 name: activout_firebase_options_selector
 description: When you have multiple Firebase projects for production, test and development, use this library to make it easier to switch between environments without building separate apps!
-version: 0.0.2
+version: 1.0.0
 homepage: https://github.com/activout/firebase_options_selector
 
 environment:
@@ -8,7 +8,7 @@ environment:
   flutter: ">=1.17.0"
 
 dependencies:
-  firebase_core: ^1.17.1
+  firebase_core: ^2.2.0
   flutter:
     sdk: flutter
   shared_preferences: ^2.0.15
