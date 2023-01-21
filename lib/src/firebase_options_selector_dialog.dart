@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:activout_firebase_options_selector/src/firebase_options_selector.dart';
 import 'package:flutter/material.dart';
 
@@ -6,6 +8,7 @@ Future<void> showFirebaseOptionsSelectorDialog(
     BuildContext context, String titleText,
     {String okText = 'OK'}) async {
   var selected = await FirebaseOptionsSelector.getCurrentSelection();
+  var hasChanged = false;
 
   return showDialog<void>(
     context: context,
@@ -23,6 +26,7 @@ Future<void> showFirebaseOptionsSelectorDialog(
                             groupValue: selected,
                             onChanged: (String? newValue) async {
                               if (newValue != null) {
+                                hasChanged = true;
                                 await FirebaseOptionsSelector.select(newValue);
                                 setState(() => selected = newValue);
                               }
@@ -36,7 +40,11 @@ Future<void> showFirebaseOptionsSelectorDialog(
           TextButton(
             child: Text(okText),
             onPressed: () {
-              Navigator.of(context).pop();
+              if (!hasChanged) {
+                Navigator.of(context).pop();
+              } else {
+                exit(0);
+              }
             },
           ),
         ],
