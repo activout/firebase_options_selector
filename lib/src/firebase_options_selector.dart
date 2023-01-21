@@ -1,6 +1,6 @@
 import 'package:activout_firebase_options_selector/src/firebase_options_banner.dart';
 import 'package:firebase_core/firebase_core.dart'
-    show Firebase, FirebaseOptions;
+    show Firebase, FirebaseOptions, defaultFirebaseAppName;
 import 'package:flutter/widgets.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -33,7 +33,8 @@ class FirebaseOptionsSelector {
 
     await Firebase.initializeApp(
       options: availableOptions[selectedKey],
-      name: selectedKey,
+      name:
+          selectedKey == _productionKey ? defaultFirebaseAppName : selectedKey,
     );
   }
 
