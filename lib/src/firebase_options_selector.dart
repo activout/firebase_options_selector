@@ -33,8 +33,7 @@ class FirebaseOptionsSelector {
 
     await Firebase.initializeApp(
       options: availableOptions[selectedKey],
-      name:
-          selectedKey == _productionKey ? defaultFirebaseAppName : selectedKey,
+      name: defaultFirebaseAppName,
     );
   }
 
